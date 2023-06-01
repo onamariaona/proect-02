@@ -1,0 +1,48 @@
+<!-- Subcribe -->
+<section class="subcribe">
+  <div class="container">
+    <h2 class="subcribe-tittle">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+    <p class="subcribe-text">
+      From the velvety texture to the rich and complex flavor, our New Chocolate
+      is a true indulgence that will leave you craving more. Made with only the
+      finest ingredients and handcrafted with the utmost care, each piece is a
+      work of art that is sure to please.
+    </p>
+    <button class="subcribe-btn" data-modal-open type="button">
+      Subscribe
+    </button>
+  </div>
+</section>
+<!-- Modai window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close-btn" data-modal-close type="button">
+      <svg class="modal-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <picture>
+      <source srcset="./modal/img@2x-1.jpg" type="modal/jpeg" />
+      <img src="./modal/img-1.jpg" alt="Chocolate" width="311" height="169" />
+    </picture>
+
+    <strong class="modal-title">Explore our new chocolate first!</strong>
+    <form class="modal-form form" name="modal-form">
+      <label class="form-label" for="modal-email">Enter your email</label>
+      <div class="form-wrapper">
+        <input
+          class="form-field"
+          type="email"
+          name="modal-email"
+          id="modal-email"
+          required
+          pattern="^[a-zA-Za-яА-Я]+$"
+          minlength="2"
+        />
+      </div>
+
+      <button class="form-btn btn" type="submit">Subcribe</button>
+    </form>
+  </div>
+</div>
